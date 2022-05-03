@@ -35,4 +35,4 @@ def generate_answers(text):
 
 
 iface = gr.Interface(fn=generate_answers, inputs=['text'], outputs=["text"])
-iface.launch(inline=False, share=True)
+iface.launch(inline=False, share=True, server_name='0.0.0.0')
